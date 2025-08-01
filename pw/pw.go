@@ -38,7 +38,7 @@ func Init(filename string) error {
 		return ErrPwFileAlreadyExists
 	}
 
-	if err := write(filename, []PasswordEntry{}); err != nil {
+	if err := write(filename, nil); err != nil {
 		return err
 	}
 
